@@ -12,7 +12,7 @@ int main()
 	bc::wallet::ec_public publicKey(secret);
 	std::cout << "Public key: " << publicKey.encoded() << std::endl;
 
-	// Get public key compressed to publicKeyData, compute has of public key for P2PKH address
+	// Get compressed public key to publicKeyData, compute hash of public key for P2PKH address
 	bc::data_chunk publicKeyData;
 	publicKey.to_data(publicKeyData);
 	const auto hash = bc::bitcoin_short_hash(publicKeyData); // RIPEMD160(SHA256(publicKey))
