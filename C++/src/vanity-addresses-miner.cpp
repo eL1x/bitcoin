@@ -2,7 +2,7 @@
 #include <bitcoin/bitcoin.hpp>
 
 // prefix to search
-const std::string searchPrefix = "1el1x";
+const std::string searchPrefix = "1sky";
 
 // functions prototypes
 bc::ec_secret generateRandomSecret(std::default_random_engine& engine);
